@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<script src="../js/jquery-1.4.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Show/Hide Button
+  $('#type_sm').hide();
+  $('#type_lrg').click(function () {
+      $(this).hide();
+	  $('#type_sm').show();
+	  $('p').addClass('large');
+      return true;
+  });
+  $('#type_sm').click(function () {
+      $(this).hide();
+	  $('#type_lrg').show();
+	  $('p').removeClass('large');
+      return true;
+  });
+});
+</script>
+
+<style>
+body {
+	margin:0;
+	padding:0;
+}
+#wrapper {
+	width:665px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 15px;
+}
+h1 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	margin:0;
+	padding:10px 0 20px 0;
+	color:#202020;
+}
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	color:#202020;
+}
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin:0;
+	padding:0;
+	color:#202020;
+}
+.large {
+	font-size:16px;
+}
+#breadcrumbs ul {
+	margin:0;
+	padding:0;
+}
+#breadcrumbs ul li {
+	display:inline;
+	list-style:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#202020;
+}
+#breadcrumbs li a {
+	text-decoration:none;
+	color:#CC6600;
+}
+#breadcrumbs li a:hover {
+	text-decoration:underline;
+}
+#left_column {
+	float:left;
+	width:170px;
+}
+.caption {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#666666;
+	text-align:right;
+	padding:5px 0 0 30px;
+}
+.enlrgphoto {
+	background-image:url(../images/sprites.gif);
+	background-position:-4px -375px;
+	background-repeat:no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding-top:15px;
+	padding-left:15px;
+}
+.enlrgphoto a {
+	color:#CC6600;
+	text-decoration:none;
+}
+.enlrgphoto a:hover {
+	text-decoration:underline;
+}
+.cutline {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#202020;
+	padding-top:5px;
+}
+#main_content {
+	margin-left:185px;
+}
+#info {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #000;
+}
+.title {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#202020;
+}
+.time {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	padding:10px 0  10px 0;
+}
+#menu {
+	margin-bottom:10px;
+}
+#menu ul {
+	margin:5px 0 0 0;
+	padding:0;
+}
+#menu ul li {
+	display:inline;
+	list-style:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:right;
+	color:#202020;
+	padding:0 8px 0px 30px;
+	border-left:1px solid #202020;
+}
+#menu ul li:first-child {
+	border:none;
+	padding-left:18px;
+}
+#menu li a {
+	text-decoration:none;
+	color:#202020;
+}
+#menu li a:hover {
+	text-decoration:underline;
+}
+#menu ul li.post {
+	background-image:url(../images/sprites.gif);
+	background-repeat:no-repeat;
+	background-position:0px -480px;
+}
+#menu ul li.email {
+	background-image:url(../images/sprites.gif);
+	background-repeat:no-repeat;
+	background-position:10px -255px;
+}
+#menu ul li.print {
+	background-image:url(../images/sprites.gif);
+	background-repeat:no-repeat;
+	background-position:10px -300px;
+}
+#menu ul li.share {
+	background-image:url(../images/sprites.gif);
+	background-repeat:no-repeat;
+	background-position:10px -345px;
+}
+#menu ul li#type_lrg {
+	background-image:url(../images/sprites.gif);
+	background-repeat:no-repeat;
+	background-position:10px -390px;
+}
+#menu ul li#type_sm {
+	background-image:url(../images/sprites.gif);
+	background-repeat:no-repeat;
+	background-position:10px -435px;
+}
+#bodytxt {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin:0;
+	padding:0;
+	color:#202020;
+}
+</style>
+</head>
+<body>
+<div id=wrapper>
+	<div id="breadcrumbs">
+    <ul>
+        <li><a href="#">Home</a><span>&nbsp; >&nbsp;</span></li>
+        <li><a href="#">Sports</a><span>&nbsp; >&nbsp;</span></li>
+        <li><a href="#">Longhorns</a></li>
+    </ul>
+    </div>
+  		<h1>Texas puts perfect mark on line at Kansas State</h1>
+    <div id="left_column">
+    	<img src="../images/basketball.jpg" width="169" height="265" />
+        <div class="caption">Laura Skelding/AMERICAN-STATESMAN</div>
+        <div class="enlrgphoto"><a href="#">ENLARGE PHOTO</a></div>
+        <div class="cutline">Texas senior forward Damion James and freshman guard Avery Bradley will be on alert against Kansas State jsut as they were against Texas A&M's David Loubeau, center, on Saturday.</div>
+    </div>
+    <div id="main_content">
+    	<div id="info">
+            <h2>By <span style="color:#CC6600; font-weight:bold;">Mark Rosner</span></h2>
+            <div class="title">AMERICAN-STATESMAN STAFF</div>
+            <div class="time">Updated: 11:17 p.m. Sunday, Jan. 17, 2010<br/>Published: 6:57 p.m. Sunday, Jan. 17, 2010
+            </div>
+        </div>
+        <div id="menu">
+        <ul>
+            <li class="post"><a href="#">Post a Comment</a></li>
+            <li class="email"><a href="#">E-mail</a></li>
+            <li class="print"><a href="#">Print</a></li>
+			<li class="share"><a href="#">Share</a></li>
+            <li id="type_lrg"><a href="#">Larger type</a></li> 
+            <li id="type_sm"><a href="#">Smaller type</a></li>
+        </ul>
+        </div>
+        <div id="bodytxt"><p>MANHATTAN, Kan. - The Longhorns, three games into their defense of the No. 1 ranking, come to a place where the opponent is formidable, the crowd is raucous, and the referees might just wear out their whistles.
+<br /><br />
+They come to face No. 13 Kansas State, an in-your-face team that reflects the personality of its coach, Frank Martin. The Wildcats spend much of their games fouling and shooting free throws.
+<br /><br />
+All 12,528 tickets have been sold, and coach Rick Barnes hopes the Longhorns can summon the fortitude Texas A&M showed in the packed Erwin Center on Saturday during a 72-67 loss to the Longhorns in overtime.
+<br /><br />
+"It's gonna be flipped Monday," Barnes said. "We're not gonna have the house. I hope we go in with the same intensity A&M brought."
+<br /><br />
+Kansas State has 13 consecutive victories at home, its longest streak in Manhattan since winning 20 straight in 1981-82.
+<br /><br />
+The Longhorns and Wildcats would not be called rivals, but you couldn't tell by their games in recent seasons.
+<br /><br />
+Barnes is 8-4 against Kansas State. The Longhorns have won four of the last six, but five of those games were decided by four points or fewer. Texas has won the last two in Manhattan. K-State has a two-game winning steak in Austin.</p></div>
+    </div>
+    <br clear="all" /> 
+</div>
+</body>
+</html>
